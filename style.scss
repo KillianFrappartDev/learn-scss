@@ -1,0 +1,64 @@
+$colors: (
+  primary: orange,
+  secondary: yellow,
+);
+
+$defaultHeight: 100px;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ring($size, $color) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border: solid $color $size/10;
+}
+
+header,
+footer {
+  background-color: map-get($colors, primary);
+  @include center;
+  height: $defaultHeight;
+}
+
+nav {
+  display: inline-block;
+}
+
+main {
+  height: 500px;
+  @include center;
+}
+
+ul {
+  list-style: none;
+}
+
+.item {
+  margin: 3rem auto;
+  @include center;
+}
+
+.ring {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.ring-1 {
+  @include ring(50px, map-get($colors, primary));
+}
+
+.ring-2 {
+  @include ring(120px, map-get($colors, secondary));
+}
+
+@for $i from 3 through 6 {
+  .ring-#{$i} {
+    margin: 0;
+    @include ring($i * 10px, #000);
+  }
+}

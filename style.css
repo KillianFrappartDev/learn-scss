@@ -1,0 +1,100 @@
+header,
+footer {
+  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+nav {
+  display: inline-block;
+}
+
+main {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.item {
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ring {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.ring-1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid orange 5px;
+}
+
+.ring-2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: solid yellow 12px;
+}
+
+.ring-3 {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid #000 3px;
+}
+
+.ring-4 {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid #000 4px;
+}
+
+.ring-5 {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid #000 5px;
+}
+
+.ring-6 {
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid #000 6px;
+}
+/*# sourceMappingURL=style.css.map */
